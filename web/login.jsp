@@ -25,8 +25,7 @@
                            </ul>
                   </div>
                   <div id="shopname">   
-                           <h1 id="nameOfShop"><i class="far fa-file-alt" id="cookie"></i> Quiz Online <i class="far fa-file-alt" id="cookie"></i></h1>
-                           <br>
+                           <br><h1 id="nameOfShop"><em class="far fa-file-alt" id="cookie"></em> Quiz Online <em class="far fa-file-alt" id="cookie"></em></h1><br>
                   </div>
                   <form action="login" method="POST" id="loginform">
                            <font id="login"><b>Login</b></font><br>
@@ -38,9 +37,9 @@
                            <input type="submit" name="btnAction" value="Login" /><br>
                            <p id="p1">If you don't have an account, please sign up here : <a id="signup_icon" href="signUpPage"><i class="fas fa-user-plus"></i></a></p>
                   </form>   
-                  <div id="foot">   
-                           <p><i class="fas fa-copyright" id="p"></i> 2021 <i class="far fa-file-alt" id="pCookie"></i> Quiz Online, by Thanh Vi.<br>
-                                    Contact me via <a href="https://www.facebook.com/merry.kute.31/"><i class="fab fa-facebook" id="p" ></i></a> or <a href="#"><i class="fas fa-envelope" id="p"></i></a></p>
+                   <div id="foot">
+                           <p><em class="fas fa-copyright" id="p"></em> 2021 <em class="far fa-file-alt" id="pCookie"></em> Quiz Online, by Thanh Vi.<br>
+                           Contact me via <a href="https://www.facebook.com/merry.kute.31/"><em class="fab fa-facebook" id="p" ></em></a> or <a href="#"><em class="fas fa-envelope" id="p"></em></a></p>
                   </div>
 
          </body>

@@ -23,7 +23,7 @@ public class AnswerDTO implements Serializable{
 
          public AnswerDTO(String questionID, String answerContent, boolean correctAnswer, boolean status, String answerID) {
                   this.questionID = questionID;
-                  this.answerContent = answerContent;
+                  this.answerContent = answerCXontent;
                   this.correctAnswer = correctAnswer;
                   this.status = status;
                   this.answerID = answerID;

@@ -41,8 +41,7 @@
                            </ul>
                   </div>
                   <div id="shopname">   
-                           <h1 id="nameOfShop"><i class="far fa-file-alt" id="cookie"></i> Quiz Online <i class="far fa-file-alt" id="cookie"></i></h1>
-                           <br>
+                           <br><h1 id="nameOfShop"><em class="far fa-file-alt" id="cookie"></em> Quiz Online <em class="far fa-file-alt" id="cookie"></em></h1><br>
                   </div>
                   <div id="listItemDetail">
                            <c:if test="${not empty requestScope.SUBJECT || not empty requestScope.QUESTION}">
@@ -93,9 +92,9 @@
                                     <h2>No question to show!! </h2>
                            </c:if>  
                   </div>
-                  <div id="foot">
-                           <p><i class="fas fa-copyright" id="p"></i> 2021 <i class="far fa-file-alt" id="pCookie"></i> Quiz Online, by Thanh Vi.<br>
-                                    Contact me via <a href="https://www.facebook.com/merry.kute.31/"><i class="fab fa-facebook" id="p" ></i></a> or <a href="#"><i class="fas fa-envelope" id="p"></i></a></p>
+                   <div id="foot">
+                           <p><em class="fas fa-copyright" id="p"></em> 2021 <em class="far fa-file-alt" id="pCookie"></em> Quiz Online, by Thanh Vi.<br>
+                           Contact me via <a href="https://www.facebook.com/merry.kute.31/"><em class="fab fa-facebook" id="p" ></em></a> or <a href="#"><em class="fas fa-envelope" id="p"></em></a></p>
                   </div>
                   <script language="javascript">
                             function submitForm(){
