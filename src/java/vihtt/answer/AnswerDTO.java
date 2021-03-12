@@ -13,7 +13,7 @@ import java.io.Serializable;
  */
 public class AnswerDTO implements Serializable{
          private String questionID;
-         private String answer_content;
+         private String answerContent;
          private boolean correctAnswer;
          private boolean status;
          private String answerID;
@@ -21,9 +21,9 @@ public class AnswerDTO implements Serializable{
          public AnswerDTO() {
          }
 
-         public AnswerDTO(String questionID, String answer_content, boolean correctAnswer, boolean status, String answerID) {
+         public AnswerDTO(String questionID, String answerContent, boolean correctAnswer, boolean status, String answerID) {
                   this.questionID = questionID;
-                  this.answer_content = answer_content;
+                  this.answerContent = answerContent;
                   this.correctAnswer = correctAnswer;
                   this.status = status;
                   this.answerID = answerID;
@@ -37,12 +37,12 @@ public class AnswerDTO implements Serializable{
                   this.questionID = questionID;
          }
 
-         public String getAnswer_content() {
-                  return answer_content;
+         public String getAnswerContent() {
+                  return answerContent;
          }
 
          public void setAnswer_content(String answer_content) {
-                  this.answer_content = answer_content;
+                  this.answerContent = answerContent;
          }
 
          public boolean isCorrectAnswer() {

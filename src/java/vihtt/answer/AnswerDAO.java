@@ -38,7 +38,7 @@ public class AnswerDAO implements Serializable{
                                     prm = con.prepareStatement(sql);
                                     prm.setString(1, dto.getQuestionID());
                                     prm.setString(2, dto.getAnswerID());
-                                    prm.setString(3, dto.getAnswer_content());
+                                    prm.setString(3, dto.getAnswerContent());
                                     prm.setBoolean(4, dto.isCorrectAnswer());
                                     prm.setBoolean(5, dto.isStatus());
                                     int row = prm.executeUpdate();
@@ -57,7 +57,7 @@ public class AnswerDAO implements Serializable{
                   return false;
          }
 
-        public void getAnswerByQuestionID(String ID) throws SQLException, NamingException {
+        public void getAnswerByQuestionID(String id) throws SQLException, NamingException {
                   Connection con = null;
                   PreparedStatement prm = null;
                   ResultSet rs = null;
@@ -68,15 +68,15 @@ public class AnswerDAO implements Serializable{
                                             + "From tblAnswers "
                                             + "Where questionID = ?";
                                     prm = con.prepareStatement(sql);
-                                    prm.setString(1, ID);
+                                    prm.setString(1, id);
                                     rs = prm.executeQuery();
                                     while (rs.next()) {
                                              String questionID = rs.getString("questionID").trim();
-                                             String answer_content = rs.getString("answer_content").trim();
+                                             String answerContent = rs.getString("answer_content").trim();
                                              String answerID = rs.getString("answerID").trim();
                                              boolean correctAnswer = rs.getBoolean("correctAnswer");
                                              boolean status = rs.getBoolean("status");
-                                             AnswerDTO dto = new AnswerDTO(questionID, answer_content, correctAnswer, status, answerID);
+                                             AnswerDTO dto = new AnswerDTO(questionID, answerContent, correctAnswer, status, answerID);
                                              if(answerList==null){
                                                       answerList = new ArrayList<>();
                                              }
@@ -113,11 +113,11 @@ public class AnswerDAO implements Serializable{
                                     rs = prm.executeQuery();
                                     while (rs.next()) {
                                              String questionID = rs.getString("questionID");
-                                             String answer_content = rs.getString("answer_content");
+                                             String answerContent = rs.getString("answer_content");
                                              String answerID = rs.getString("answerID");
                                              boolean correctAnswer = rs.getBoolean("correctAnswer");
                                              boolean status = rs.getBoolean("status");
-                                             dto = new AnswerDTO(questionID, answer_content, correctAnswer, status, answerID);
+                                             dto = new AnswerDTO(questionID, answerContent, correctAnswer, status, answerID);
                                     }
                            }
                   } finally {
@@ -145,7 +145,7 @@ public class AnswerDAO implements Serializable{
                                             + "set  answer_content = ?, correctAnswer = ?, status = ? "
                                             + "Where questionID = ? AND answerID = ?";
                                     prm = con.prepareStatement(sql);
-                                    prm.setString(1, dto.getAnswer_content());
+                                    prm.setString(1, dto.getAnswerContent());
                                     prm.setBoolean(2, dto.isCorrectAnswer());
                                     prm.setBoolean(3, dto.isStatus());
                                     prm.setString(4, dto.getQuestionID());

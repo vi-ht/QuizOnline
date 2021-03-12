@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import org.apache.log4j.LogManager;
@@ -48,7 +49,7 @@ public class ContextAtribute implements ServletContextListener{
 
          @Override
          public void contextDestroyed(ServletContextEvent sce) {
-                  
+                  sce.getServletContext().removeAttribute("SERVLETNAME");
          }
 
   

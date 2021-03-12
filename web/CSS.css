@@ -254,15 +254,7 @@ input[type=submit], input[type=reset]{
          float: left;
          margin-left: 0%;
 }
-#create_link{
-         width: 100%;
-         color: #F7819F;
-         background-color: white;
-         font-family: Helvetica;
-         font-size: 16px;
-         float: left;
-         margin-left: 0%;
-}
+
 #Search_button{
          width: 9%;
          background-color: #F7819F;
@@ -993,7 +985,8 @@ footer{
                            margin-bottom: 10px;
                            width: 80%;
                   }
-                  #create_link{
+
+#create_link{
          width: 100%;
          color: #F7819F;
          background-color: white;

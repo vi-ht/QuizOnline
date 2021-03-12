@@ -90,13 +90,13 @@ public class UpdateServlet extends HttpServlet {
                                     }
                                     for (AnswerDTO a : dtoCheckDuplicated.getListAnswer()) {
                                              if (a.isCorrectAnswer()) {
-                                                      if (!correctAnswer.equals(a.getAnswer_content())) {
+                                                      if (!correctAnswer.equals(a.getAnswerContent())) {
                                                                checkAnswer = false;
                                                                break;
                                                       }
                                              } else {
                                                       String parameterName = "txtAnswer" + a.getAnswerID();
-                                                      if (!request.getParameter(parameterName).equals(a.getAnswer_content())) {
+                                                      if (!request.getParameter(parameterName).equals(a.getAnswerContent())) {
                                                                checkAnswer = false;
                                                                break;
 
