@@ -1,3 +1,4 @@
+[![Build](https://github.com/vi-ht/QuizOnline/actions/workflows/build.yml/badge.svg)](https://github.com/vi-ht/QuizOnline/actions/workflows/build.yml)
 # Welcome to QuizOnline repository
 
 ## You will find in this repo:
